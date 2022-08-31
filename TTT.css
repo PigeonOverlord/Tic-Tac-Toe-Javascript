@@ -1,0 +1,63 @@
+.title {
+    text-align: center;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: #c0c6cf;
+    color: #04c0b2;
+}
+
+.cell {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px 2px #ecd7ba;
+    border: 2px solid #222120;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.modal-container {
+    background-color: rgba(38, 153, 214, 0.94);
+    display:flex;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    max-width: 100%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+
+.modal-container.show {
+    opacity: 1;
+}
+
+#modalButton {
+    background-color: #47a386;
+    border:0;
+    border-radius: 5px;
+    color: #fff;
+    padding:10px 25px;
+    display:flex;
+    margin:auto;
+    margin-top: 25px;
+}
